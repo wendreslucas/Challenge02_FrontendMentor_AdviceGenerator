@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import api from '../../pages/api/api.js'
 import Divisor from '../divisor/Divisor.jsx'
 import styled from 'styled-components'
-import { textoHeader, textoFundoEscuro } from '../ui/Variaveis'
+import { textoDetalhe, textoFundoEscuro } from '../ui/Variaveis'
 import { BsFillDice5Fill } from 'react-icons/bs'
 
 const Head = styled.div`
@@ -12,10 +12,8 @@ const Head = styled.div`
   align-items: center;
   justify-content: space-around;
   letter-spacing: 0.2rem;
-  color: ${textoHeader};
+  color: ${textoDetalhe};
 `
-
-const Btn = styled.button``
 
 const Texto = styled.p`
   font-size: 28px;
@@ -29,20 +27,19 @@ const ContainerBotao = styled.div`
   width: 64px;
   border-radius: 50%;
   position: absolute;
-  bottom: 60px;
+  bottom: 110px;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${textoHeader};
+  background-color: ${textoDetalhe};
   margin: auto;
   transition: all 0.3s ease-out;
   &:hover {
     cursor: pointer;
-    box-shadow: 0 0 20px 0 ${textoHeader};
+    box-shadow: 0 0 20px 0 ${textoDetalhe};
   }
 `
-
 const Content = () => {
   const [conselho, setConselho] = useState('')
 
@@ -58,7 +55,6 @@ const Content = () => {
   if (!conselho) {
     return <p>Carregando...</p>
   }
-  // console.log(conselho)
 
   return (
     <>
