@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { fundoEscuro } from './ui/Variaveis'
+import { fundoEscuro, textoDetalhe } from './ui/Variaveis'
 
 export const GlobalStyle = createGlobalStyle`
   body {      
@@ -12,7 +12,14 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;  
     -webkit-font-smoothing: antialiased;
     width: 100%; 
-  
-}
+  }
 
+    h1 {
+    font-size: 11px;
+    color: ${textoDetalhe};
+    letter-spacing: 3.45px;
+    @media screen and (min-width: 600px) {
+        font-size: 13px;
+    }  
+}
 `

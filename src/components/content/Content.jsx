@@ -16,18 +16,17 @@ const Head = styled.div`
 `
 
 const Texto = styled.p`
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 800;
   color: ${textoFundoEscuro};
-  padding: 2rem;
-  text-align: center;
+  margin: 24px 0;
 `
 const ContainerBotao = styled.div`
   height: 64px;
   width: 64px;
   border-radius: 50%;
   position: absolute;
-  bottom: 110px;
+  bottom: 70px;
   border: none;
   display: flex;
   align-items: center;
@@ -35,6 +34,7 @@ const ContainerBotao = styled.div`
   background-color: ${textoDetalhe};
   margin: auto;
   transition: all 0.3s ease-out;
+
   &:hover {
     cursor: pointer;
     box-shadow: 0 0 20px 0 ${textoDetalhe};
