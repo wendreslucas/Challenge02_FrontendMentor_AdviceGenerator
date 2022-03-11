@@ -3,18 +3,19 @@ import { fundoEscuro } from './ui/Variaveis'
 
 export const GlobalStyle = createGlobalStyle`
   body {  
-    display: flex;
     align-items: center;
-    justify-content: center;
     background: ${fundoEscuro} ;
-    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    display: flex;
     font-family: 'Manrope', sans-serif;
+    height: 100vh;
+    justify-content: center;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;  
+    -webkit-font-smoothing: antialiased;
     width: 100%;
-    height: 100vh;
+    
 
   ${
     '' /* @media (max-width: 1080px) {

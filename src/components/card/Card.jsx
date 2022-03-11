@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { conteudoEscuro } from '../ui/Variaveis'
-import api from '../../pages/api/api.js'
+
+import Content from '../content/Content'
+import Button from '../divBtn/DivBtn'
 
 const Cartao = styled.div`
   align-items: center;
@@ -11,7 +13,7 @@ const Cartao = styled.div`
   display: flex;
   flex-direction: column;
   height: 70vh;
-  justify-content: center;
+  justify-content: space-around;
   padding: 1rem;
   width: 44rem;
 
@@ -22,25 +24,9 @@ const Cartao = styled.div`
 `
 
 const Card = () => {
-  const [conselho, setConselho] = useState('')
-
-  async function carregaConselho() {
-    const conselho = await api.listaConselho()
-    setConselho(conselho)
-  }
-
-  useEffect(() => {
-    carregaConselho()
-  }, [])
-
-  if (!conselho) {
-    return <p>Carregando...</p>
-  }
-  console.log(conselho)
   return (
     <Cartao>
-      <h1>{conselho.slip.id}</h1>
-      <h3>{conselho.slip.advice}</h3>
+      <Content />
     </Cartao>
   )
 }
