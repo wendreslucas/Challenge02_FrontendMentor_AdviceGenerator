@@ -16,7 +16,6 @@ const Cartao = styled.div`
   width: 44rem;
 
   .Paragrafo {
-    color: red;
     font-size: 32px;
   }
 `

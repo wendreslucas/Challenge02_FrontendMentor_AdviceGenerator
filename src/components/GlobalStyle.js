@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     text-decoration: none;  
     -webkit-font-smoothing: antialiased;
-    width: 100%; 
+    width: 100%;   
   }
 
     h1 {
