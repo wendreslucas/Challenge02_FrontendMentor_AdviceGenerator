@@ -20,6 +20,7 @@ const Texto = styled.p`
   font-weight: 800;
   color: ${textoFundoEscuro};
   margin: 24px 24px;
+
   @media (min-width: 375px) {
     font-size: 20px;
   }
@@ -29,7 +30,7 @@ const ContainerBotao = styled.div`
   width: 64px;
   border-radius: 50%;
   position: absolute;
-  bottom: 110px;
+
   border: none;
   display: flex;
   align-items: center;
@@ -38,7 +39,18 @@ const ContainerBotao = styled.div`
   margin: auto;
   transition: all 0.3s ease-out;
 
-  @media (min-width: 800px) {
+  @media (min-width: 1440px) {
+    flex-direction: column;
+    bottom: 150px;
+    position: absolute;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: column;
+    bottom: 110px;
+  }
+
+  @media (max-width: 800px) {
     flex-direction: column;
     bottom: 90px;
   }

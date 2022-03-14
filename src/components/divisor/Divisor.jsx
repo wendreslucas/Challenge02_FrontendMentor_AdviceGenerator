@@ -9,7 +9,7 @@ const ImageContainer = styled.div`
 const Divisor = () => {
   return (
     <ImageContainer>
-      <img src="/pattern-divider-mobile.png" />
+      <img src="/pattern-divider-mobile.png" alt="componente divisão" />
     </ImageContainer>
   )
 }
