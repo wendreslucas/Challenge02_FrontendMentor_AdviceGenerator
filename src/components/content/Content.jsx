@@ -26,7 +26,7 @@ const ContainerBotao = styled.div`
   width: 64px;
   border-radius: 50%;
   position: absolute;
-  bottom: 70px;
+  bottom: 90px;
   border: none;
   display: flex;
   align-items: center;
