@@ -6,9 +6,7 @@ const Footer = styled.footer`
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-decoration: none;
-  /* margin-top: 10px; */
 `
 
 const TextoRodape = styled.a`

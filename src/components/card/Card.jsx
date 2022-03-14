@@ -11,9 +11,13 @@ const Cartao = styled.div`
   display: flex;
   flex-direction: column;
   height: 60vh;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 1rem;
   width: 44rem;
+
+  @media (max-width: 425px) {
+    width: 92%;
+  }
 
   .Paragrafo {
     font-size: 32px;

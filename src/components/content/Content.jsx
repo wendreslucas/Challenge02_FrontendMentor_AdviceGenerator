@@ -19,14 +19,17 @@ const Texto = styled.p`
   font-size: 24px;
   font-weight: 800;
   color: ${textoFundoEscuro};
-  margin: 24px 0;
+  margin: 24px 24px;
+  @media (min-width: 375px) {
+    font-size: 20px;
+  }
 `
 const ContainerBotao = styled.div`
   height: 64px;
   width: 64px;
   border-radius: 50%;
   position: absolute;
-  bottom: 90px;
+  bottom: 110px;
   border: none;
   display: flex;
   align-items: center;
@@ -34,6 +37,16 @@ const ContainerBotao = styled.div`
   background-color: ${textoDetalhe};
   margin: auto;
   transition: all 0.3s ease-out;
+
+  @media (min-width: 800px) {
+    flex-direction: column;
+    bottom: 90px;
+  }
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    bottom: 90px;
+  }
 
   &:hover {
     cursor: pointer;

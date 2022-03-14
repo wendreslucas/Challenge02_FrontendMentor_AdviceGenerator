@@ -8,6 +8,12 @@ const Contain = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    width: 100%;
+    height: 97vh;
+  }
 `
 
 const Container = () => {
